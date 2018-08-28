@@ -10,7 +10,6 @@ const InputView = function () {
       planet.addEventListener('click', (event) => {
         const selectedPlanet = event.target.id;
         PubSub.publish("InputView:click", selectedPlanet);
-            console.log(selectedPlanet);
       })
     })
   };
